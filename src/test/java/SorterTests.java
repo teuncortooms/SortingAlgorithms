@@ -20,7 +20,7 @@ class SorterTests {
     }
 
     @Test
-    void bubbleSort() {
+    void bubbleSortTest() {
         int[] arr = getRandomIntsArray();
         arr = new BubbleSorter().sort(arr);
         for (int i = 0; i < arr.length - 1; i++) {
@@ -29,7 +29,7 @@ class SorterTests {
     }
 
     @Test
-    void quickSort() {
+    void quickSortTest() {
         int[] arr = getRandomIntsArray();
         arr = new QuickSorter().sort(arr, 0, arr.length - 1);
         for (int i = 0; i < arr.length - 1; i++) {
@@ -38,7 +38,7 @@ class SorterTests {
     }
 
     @Test
-    void countingSort() {
+    void countingSortTest() {
         int[] arr = getRandomIntsArray();
         arr = new CountingSorter().sort(arr, upperValueBound);
         for (int i = 0; i < arr.length - 1; i++) {
